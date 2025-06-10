@@ -1,4 +1,4 @@
-# 🧠 GenAI Reviews – Progetto SE4AI
+# 🧠 REACT: Review Evaluation And Creation Tool
 
 [![Docker](https://img.shields.io/badge/docker-microservices-blue)](https://www.docker.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-ready-brightgreen)](https://fastapi.tiangolo.com/)
