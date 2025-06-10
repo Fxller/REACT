@@ -1,0 +1,5 @@
+outs:
+- md5: 6d0e8c8be95027cde03e859eed8adb62
+  size: 227453850
+  hash: md5
+  path: amazon_beauty_reviews.csv

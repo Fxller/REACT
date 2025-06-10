@@ -1,0 +1,5 @@
+outs:
+- md5: 078da67a04f84a6b4b397569f37e0bc0.dir
+  nfiles: 8
+  hash: md5
+  path: final_model

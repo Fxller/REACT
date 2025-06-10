@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  clean-xgboost:
+    cmd: python scripts/clean_amazon_reviews_xgboost.py
+    deps:
+    - path: data/raw/reviews/amazon_beauty_reviews.csv
+      hash: md5
+      md5: 6d0e8c8be95027cde03e859eed8adb62
+      size: 227453850
+    - path: scripts/clean_amazon_reviews_xgboost.py
+      hash: md5
+      md5: 8455b16bec5339f54f27fa536fe981f2
+      size: 6212
+    outs:
+    - path: data/clean/amazon_beauty_reviews_clean.csv
+      hash: md5
+      md5: f20fb3da891060e3433ff7c81d27498e
+      size: 31086297
+  clean-t5:
+    cmd: python scripts/clean_amazon_reviews_t5small.py
+    deps:
+    - path: data/raw/metadati/amazon_beauty_metadati.csv
+      hash: md5
+      md5: 5e3a6278e5afaeba8420e4a19529621b
+      size: 206347796
+    - path: data/raw/reviews/amazon_beauty_reviews.csv
+      hash: md5
+      md5: 6d0e8c8be95027cde03e859eed8adb62
+      size: 227453850
+    - path: scripts/clean_amazon_reviews_t5small.py
+      hash: md5
+      md5: e0b29739898155ce19c8f6ddeeda2bb4
+      size: 3711
+    outs:
+    - path: data/clean/amazon_beauty_reviews_clean_t5.csv
+      hash: md5
+      md5: e4a818bf5a9be71ae3f7dfa04d7d8fa5
+      size: 78841059

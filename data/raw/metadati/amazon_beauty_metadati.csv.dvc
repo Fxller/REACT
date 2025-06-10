@@ -1,0 +1,5 @@
+outs:
+- md5: 5e3a6278e5afaeba8420e4a19529621b
+  size: 206347796
+  hash: md5
+  path: amazon_beauty_metadati.csv

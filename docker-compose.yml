@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  orchestrator:
+    build: ./orchestrator
+    ports:
+      - "8000:8000"
+    depends_on:
+      - reviews-generator
+      - reviews-classifier
+    networks:
+      - genai-net
+
+  reviews-generator:
+    build: ./reviews-generator
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    networks:
+      - genai-net
+
+  reviews-classifier:
+    build: ./reviews-classifier
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+    networks:
+      - genai-net
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - orchestrator
+    networks:
+      - genai-net
+
+networks:
+  genai-net:
+    driver: bridge

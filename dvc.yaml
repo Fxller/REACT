@@ -1,0 +1,16 @@
+stages:
+  clean-xgboost:
+    cmd: python scripts/clean_amazon_reviews_xgboost.py
+    deps:
+      - scripts/clean_amazon_reviews_xgboost.py
+      - data/raw/reviews/amazon_beauty_reviews.csv
+    outs:
+      - data/clean/amazon_beauty_reviews_clean.csv
+  clean-t5:
+    cmd: python scripts/clean_amazon_reviews_t5small.py
+    deps:
+      - scripts/clean_amazon_reviews_t5small.py
+      - data/raw/reviews/amazon_beauty_reviews.csv
+      - data/raw/metadati/amazon_beauty_metadati.csv
+    outs:
+      - data/clean/amazon_beauty_reviews_clean_t5.csv
