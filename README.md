@@ -113,6 +113,6 @@ Traccia ogni esecuzione su MLflow:
 
 ## 👥 Autori
 
-* 🧑‍💻 Rosa Carotenuto
-* 👩‍💻 Luigi Guida
+* 👩‍💻 Rosa Carotenuto
+* 🧑‍💻 Luigi Guida
 * 🧑‍💻 Francesco Perilli
