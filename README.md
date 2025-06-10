@@ -23,7 +23,7 @@ Sistema a microservizi containerizzato per **generare** e **classificare** recen
 ## 🧱 Architettura
 
 ```text
-📦 genai-reviews/
+📦 REACT/
 🔼-- orchestrator/          # Riceve input e smista richieste
 🔼-- reviews-generator/     # Genera la recensione testuale (porta 8001)
 🔼-- reviews-classifier/    # Classifica la recensione (porta 8002)
@@ -107,7 +107,7 @@ Traccia ogni esecuzione su MLflow:
 * ⚡ `FastAPI` – microservizi REST asincroni
 * 🔍 `MLflow` – logging e metriche
 * 📦 `Docker`, `docker-compose` – containerizzazione
-* 📂 `DVC` – gestione dataset
+* 📂 `DVC` – gestione dataset e modelli
 
 ---
 
