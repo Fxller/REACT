@@ -96,7 +96,7 @@ curl -X POST http://localhost:8000/process \
 ## 📊 Monitoraggio esperimenti
 
 Traccia ogni esecuzione su MLflow:
-👉 [Visualizza su DagsHub](https://dagshub.com/Fxller/genai-reviews/experiments)
+👉 [Visualizza su DagsHub](https://dagshub.com/Fxller/se4ai-project/experiments)
 
 ---
 
