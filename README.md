@@ -40,8 +40,8 @@ Sistema a microservizi containerizzato per **generare** e **classificare** recen
 ### 1. Clona la repository
 
 ```bash
-git clone https://dagshub.com/Fxller/genai-reviews.git
-cd genai-reviews
+git clone https://github.com/Fxller/REACT.git
+cd REACT
 ```
 
 ### 2. Crea il file `.env`
@@ -55,7 +55,7 @@ Compila con le tue credenziali DagsHub:
 ```dotenv
 MLFLOW_TRACKING_USERNAME=ilTuoUsername
 MLFLOW_TRACKING_PASSWORD=ilTuoAccessToken
-MLFLOW_TRACKING_URI=https://dagshub.com/Fxller/genai-reviews.mlflow
+MLFLOW_TRACKING_URI=https://dagshub.com/Fxller/se4ai-project.mlflow
 ```
 
 ### 3. Avvia i container
